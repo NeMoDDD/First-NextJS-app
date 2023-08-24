@@ -1,11 +1,15 @@
-import Link from "next/link";
+import {Navigate} from "@/components/Navigation";
 
+
+const navItems = [
+    {label: "Home", href: "/"},
+    {label: "Blog", href: "/blog"},
+    {label: "About", href: "/about"},
+]
 export default function TheHeader() {
     return (
         <header className="header">
-            <Link href="/">Home</Link>
-            <Link href="/blog">Blog</Link>
-            <Link href="/about">About</Link>
+            <Navigate navLinks={navItems}/>
         </header>
     )
 }

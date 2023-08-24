@@ -28,9 +28,13 @@ body {
     justify-content: center;
     align-items: center;
 }
-.header a {
+.navlink {
     color: white;
     text-decoration: none;
     font-size: 25px;
     margin-right: 20px;
+}
+
+.active {
+    color: #7474da;
 }
